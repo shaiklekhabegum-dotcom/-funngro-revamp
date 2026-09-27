@@ -1,0 +1,38 @@
+:root{
+  --bg:#0F2A22; --panel:#153A2E; --line:#2B4A3D;
+  --text:#F4FAF6; --muted:#9FB8AC; --mint:#3DDC97; --marigold:#FFB84D;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ background:var(--bg); color:var(--text); font-family:Arial,sans-serif; line-height:1.5; }
+.wrap{ max-width:900px; margin:0 auto; padding:0 24px; }
+
+header{ border-bottom:1px solid var(--line); }
+.navbar{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:900px; margin:0 auto; }
+.brand{ display:flex; align-items:center; gap:10px; font-size:20px; font-weight:700; }
+.brand-mark{ width:28px; height:28px; border-radius:8px; background:var(--mint); color:#0F2A22; display:flex; align-items:center; justify-content:center; }
+
+.tabs{ display:flex; gap:4px; background:var(--panel); border-radius:999px; padding:4px; }
+.tab{ border:0; background:transparent; color:var(--muted); font-weight:600; padding:8px 16px; border-radius:999px; cursor:pointer; }
+.tab.active{ background:var(--mint); color:#0F2A22; }
+
+.page{ display:none; }
+.page.active{ display:block; }
+
+.hero{ padding:56px 0 32px; }
+.hero h1{ font-size:36px; max-width:9ch; }
+.lede{ color:var(--muted); font-size:17px; max-width:44ch; margin-top:14px; }
+.cta-row{ display:flex; gap:12px; margin-top:24px; flex-wrap:wrap; }
+.btn{ padding:12px 22px; border-radius:999px; font-weight:600; text-decoration:none; }
+.btn-primary{ background:var(--marigold); color:#241503; }
+.btn-ghost{ border:1px solid var(--line); color:var(--text); }
+
+.stat-row{ display:flex; gap:28px; margin-top:36px; flex-wrap:wrap; }
+.stat b{ font-size:22px; display:block; }
+.stat span{ color:var(--muted); font-size:13px; }
+
+.steps{ padding:32px 0; border-top:1px solid var(--line); margin-top:20px; }
+.step{ display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); }
+.step .n{ color:var(--mint); font-size:18px; min-width:26px; }
+.step p{ color:var(--muted); font-size:14px; }
+
+footer{ border-top:1px solid var(--line); padding:24px 0; color:var(--muted); font-size:13px; }

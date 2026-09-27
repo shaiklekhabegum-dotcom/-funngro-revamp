@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funngro — India's Freelancing Platform for Teens</title>
+  <meta name="description" content="Funngro connects Indian teens with real companies for paid freelance projects in design, writing, marketing and tech.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="brand"><span class="brand-mark">F</span>Funngro</div>
+      <nav class="tabs">
+        <button class="tab active" id="tab-teens" onclick="showPage('teens')">For Teens</button>
+        <button class="tab" id="tab-companies" onclick="showPage('companies')">For Companies</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <!-- PAGE 1: TEENS -->
+    <section class="page active" id="page-teens">
+      <div class="hero">
+        <h1>Your first paycheque, before you're old enough to vote.</h1>
+        <p class="lede">Funngro connects Indian teens with real companies for paid freelance projects — writing, design, marketing, and tech.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#" onclick="alert('Signup form coming soon!'); return false;">Create your profile</a>
+          <a class="btn btn-ghost" href="#page-companies" onclick="showPage('companies')">I'm hiring instead</a>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b>60L+</b><span>Teenlancers on the platform</span></div>
+          <div class="stat"><b>1,000+</b><span>Partner companies</span></div>
+          <div class="stat"><b>UPI</b><span>Instant payouts</span></div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <h2>How it works</h2>
+        <div class="step"><div class="n">01</div><div><h3>Build your profile</h3><p>Add your skills and a short bio.</p></div></div>
+        <div class="step"><div class="n">02</div><div><h3>Apply to real projects</h3><p>Browse gigs from verified companies.</p></div></div>
+        <div class="step"><div class="n">03</div><div><h3>Deliver and get reviewed</h3><p>Submit your work by the deadline.</p></div></div>
+        <div class="step"><div class="n">04</div><div><h3>Get paid instantly</h3><p>Payouts land straight in your UPI account.</p></div></div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: COMPANIES -->
+    <section class="page" id="page-companies">
+      <div class="hero">
+        <h1>Fresh talent, fast turnarounds, fair pricing.</h1>
+        <p class="lede">Post a project and get matched with vetted, motivated young freelancers.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#" onclick="alert('Project posting form coming soon!'); return false;">Post a project</a>
+          <a class="btn btn-ghost" href="#page-teens" onclick="showPage('teens')">I'm a teenlancer</a>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b>24–48h</b><span>Average time to first applicant</span></div>
+          <div class="stat"><b>5</b><span>Categories: content, design, social, video, tech</span></div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <h2>How hiring works</h2>
+        <div class="step"><div class="n">01</div><div><h3>Post your brief</h3><p>Describe the task, timeline, and budget.</p></div></div>
+        <div class="step"><div class="n">02</div><div><h3>Review applicants</h3><p>See portfolios and pick a teenlancer.</p></div></div>
+        <div class="step"><div class="n">03</div><div><h3>Approve the work</h3><p>Give feedback or request revisions.</p></div></div>
+        <div class="step"><div class="n">04</div><div><h3>Pay on completion</h3><p>Release payment once you're happy.</p></div></div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrap">© Funngro · Redesign concept</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
